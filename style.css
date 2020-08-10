@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  margin: 50px auto;
+  letter-spacing: 5px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-container {
+  margin: 10px 20%;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 16px;
+    margin: 30px auto;
+    letter-spacing: 3px;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
+}

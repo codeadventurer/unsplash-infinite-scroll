@@ -34,6 +34,7 @@ h1 {
 }
 
 .image-container img {
+  margin-top: 5px;
   width: 100%;
 }
 

@@ -55,6 +55,7 @@ async function getPhotos() {
     const response = await fetch(apiUrl);
     const photosArray = await response.json();
     displayPhotos(photosArray);
+    loader.hidden = true;
   } catch (error) {}
 }
 
@@ -66,8 +67,8 @@ window.addEventListener("scroll", () => {
   const totalHeight = document.body.offsetHeight;
 
   if (windowHeight + ScrollHeight >= totalHeight - 1000 && ready) {
-    console.log("getPhotos now");
     ready = false;
+    loader.hidden = false;
     getPhotos();
   }
 });
